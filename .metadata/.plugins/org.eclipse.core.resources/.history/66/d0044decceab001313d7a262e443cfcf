@@ -1,0 +1,65 @@
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+	pageEncoding="US-ASCII"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+	<form action="Search.jsp" method="post">
+		keyword: <input id="keyword" type="text" name="keyword" /> <input type="submit" value="Search"/>
+		<div id="results"></div>
+	</form>
+</body>
+
+<script type="text/javascript">
+
+	function search() {
+		var dsn	= "http://dbpedia.org/resource/DBpedia";
+		var query = "DEFINE get:soft \"replace\"\nSELECT DISTINCT * FROM <"+dsn+"> WHERE {?s ?p ?o}"; 
+		//var data = sparqlQuery(query, "http://localhost:1111/sparql/");
+		$.ajax({
+            type:"POST",
+            beforeSend: function (request)
+            {
+                request.setRequestHeader("Accept", "application/json");
+            },
+            dataType: "jsonp",
+            url: "http://localhost:1111/api/search/KeywordSearch?QueryString=" + $("#keyword").val(),
+            success: function(msg) {
+                $("#results").html(msg);
+            }
+    	});
+	}
+
+	function sparqlQuery(query, baseURL, format) {
+		if(!format)
+			format="application/json";
+		var params={
+			"default-graph": "", "should-sponge": "soft", "query": query,
+			"debug": "on", "timeout": "", "format": format,
+			"save": "display", "fname": ""
+		};
+		
+		var querypart="";
+		for(var k in params) {
+			querypart+=k+"="+encodeURIComponent(params[k])+"&";
+		}
+		var queryURL=baseURL + '?' + querypart;
+		if (window.XMLHttpRequest) {
+	  	xmlhttp=new XMLHttpRequest();
+	  }
+	  else {
+	  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	  xmlhttp.open("GET",queryURL,false);
+	  xmlhttp.send();
+	  return JSON.parse(xmlhttp.responseText);
+	}
+	
+</script>
+
+
+</html>

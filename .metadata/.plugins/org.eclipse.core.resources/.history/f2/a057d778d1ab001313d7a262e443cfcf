@@ -1,0 +1,10 @@
+<html>
+<body bgcolor="white">
+
+<h1>
+
+<% out.print (request.getAttribute("result").toString()); %>
+
+</h1>
+
+</html>

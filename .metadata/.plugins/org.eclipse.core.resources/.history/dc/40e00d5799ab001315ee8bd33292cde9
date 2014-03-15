@@ -1,0 +1,10 @@
+<%@ page import="DBPediaRequest.java" %>
+<html>
+<body bgcolor="white">
+
+<!-- Forward to a servlet -->
+<jsp:forward page="/ServletToJsp">
+  <jsp:param name="keyword" value="berlin" ></jsp:param>
+</jsp:forward>
+
+</html>

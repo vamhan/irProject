@@ -1,0 +1,12 @@
+<%@ page import="org.json.JSONObject" %>
+<html>
+<body bgcolor="white">
+
+<h1>
+
+<% 
+out.print (((JSONObject)request.getAttribute("resultList")).getJSONArray("results").getJSONObject(0).getString("description")); %>
+
+</h1>
+
+</html>

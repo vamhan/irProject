@@ -1,6 +1,10 @@
 package controller;
-import java.io.IOException;
 
+import java.io.IOException;
+import java.util.List;
+
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.servlet.ServletException;
@@ -15,22 +19,22 @@ public class Search extends HttpServlet {
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
+		String keyword = request.getParameter("keyword").replace(" ", "+");
+		JSONObject o = DBPediaRequest.getResult(keyword);
 
-			JSONObject o = DBPediaRequest.getResult(request.getParameter("keyword"));
+		JSONArray docs = LuceneSearch.search(keyword);
 
+		try {
 			request.setAttribute("resultList", o);
-			try {
-				getServletConfig().getServletContext()
-						.getRequestDispatcher("/searchResult.jsp")
-						.forward(request, response);
-			} catch (ServletException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			//DBConnector connector = new DBConnector();
-			//connector.connect();
-			
-		
+			request.setAttribute("localReports", docs);
+			getServletConfig().getServletContext()
+					.getRequestDispatcher("/searchResult.jsp")
+					.forward(request, response);
+		} catch (ServletException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 }

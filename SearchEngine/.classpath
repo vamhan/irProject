@@ -13,8 +13,28 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="/Users/vamhan/Downloads/httpcomponents-client-4.3.3/lib/httpclient-4.3.3.jar"/>
-	<classpathentry kind="lib" path="/Users/vamhan/Downloads/httpcomponents-client-4.3.3/lib/httpcore-4.3.2.jar"/>
-	<classpathentry kind="lib" path="/Users/vamhan/Downloads/java-json.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/httpclient-4.3.3.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/java-json.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/lucene-analyzers-common-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/lucene-core-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/lucene-queryparser-4.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/pdfbox-app-1.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/poi-3.8-beta3-20110606.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/poi-scratchpad-3.8-beta3-20110606.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-jena-2.11.1/lib/jena-arq-2.11.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-jena-2.11.1/lib/jena-core-2.11.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/jena-arq-2.11.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/jena-core-2.11.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/jena-iri-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/jena-sdb-1.4.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/jena-tdb-1.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/slf4j-api-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/slf4j-log4j12-1.6.4.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/SearchEngine/WebContent/WEB-INF/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

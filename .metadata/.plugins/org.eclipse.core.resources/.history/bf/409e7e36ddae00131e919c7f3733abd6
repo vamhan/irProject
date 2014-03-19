@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="1.css">
+<title>Advanced</title>
+<style type="text/css">
+body {background-image:url("background3.jpg");
+</style>
+</head>
+<body>
+<div class="center">
+<h1>Football Guru </h1>
+
+	
+<div class="form">	
+<form name="search" method="get">
+<p>Find stats with:</p>
+		<input id = "text_submit" type="text" name="terms" onfocus="if (this.value == 'All these terms') {this.value=''}" onblur="if(this.value == '') { this.value='All these terms'}" value="All these terms"></input> 
+        <input id = "text_submit" type="text" name="plural" onfocus="if (this.value == 'The exact term or phrase') {this.value=''}" onblur="if(this.value == '') { this.value='The exact term or phrase'}" value="The exact term or phrase"></input>
+		<input id = "text_submit" type="text" name="anyterms" onfocus="if (this.value == 'Any of this terms') {this.value=''}" onblur="if(this.value == '') { this.value='Any of this terms'}" value="Any of this terms"></input>
+		<input id = "text_submit" type="text" name="none" onfocus="if (this.value == 'None of these terms') {this.value=''}" onblur="if(this.value == '') { this.value='None of these terms'}" value="None of these terms"></input>
+		
+				<button id="advancedematches_submit" type="submit" formaction="" class="optbutton">Score!</button>
+
+
+	</form>
+
+</div>
+
+</div>	
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User Registration</title>
+    <link rel="Stylesheet" type="text/css" href="UserRegistration.css" />
+    <meta charset="utf-8" />
+	<style>
+
+		body { 
+			background: #eee; 
+			background-image:url("background1_9.jpg");
+		}
+	</style>    
+  </head>
+
+  <body>
+
+  	<form id="signup">
+		<h1>Help us to help yourself.</h1>
+		<input type="text" name="txtUserName" placeholder="Choose your User Name" required>
+		<input type="password" name="txtPassword" placeholder="Choose your password" required>
+		<input type="password" name="txtConfirmPassword" placeholder="Confirm password" required>
+        <input type="text" name="txtFavTeams" placeholder="Favorite teams" />
+        <input type="text" name="txtFavPlayers" placeholder="Favorite players" />
+        <input type="text" name="txtInterestedInformation" placeholder="Interested in World Cups, Host Nations, Penalty Shootouts, etc" />
+		<button type="submit">Sign up for free!</button>	
+	</form>
+
+	
+  </body>
+
+</html>

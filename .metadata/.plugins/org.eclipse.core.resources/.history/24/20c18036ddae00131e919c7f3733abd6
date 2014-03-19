@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="1.css">
+<title>Goal</title>
+<style type="text/css">
+body {background-image:url("background2.jpg");
+</style>
+</head>
+<body>
+<div class="center">
+<h1>Football Guru </h1>
+
+	
+<div class="form">	
+<form name="search" method="get">
+		<input id = "text_submit" type="text" name="winner" onfocus="if (this.value == 'Winner') {this.value=''}" onblur="if(this.value == '') { this.value='Winner'}" value="Winner"></input> 
+        <input id = "text_submit" type="text" name="year" onfocus="if (this.value == 'Year') {this.value=''}" onblur="if(this.value == '') { this.value='Year'}" value="Year"></input>
+		<input id = "text_submit" type="text" name="player" onfocus="if (this.value == 'Player') {this.value=''}" onblur="if(this.value == '') { this.value='Player'}" value="Player"></input>
+		<input id = "text_submit" type="text" name="team" onfocus="if (this.value == 'Team') {this.value=''}" onblur="if(this.value == '') { this.value='Team'}" value="Team"></input>
+		
+				<button id="advancedematches_submit" type="submit" formaction="" class="optbutton">Score!</button>
+
+
+	</form>
+
+</div>
+
+</div>	
+	</body>
+</html>

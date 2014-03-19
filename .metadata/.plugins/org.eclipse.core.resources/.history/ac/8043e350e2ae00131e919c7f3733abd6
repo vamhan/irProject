@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/IT4BI Courses - Semester 2/Information Retrieval/3. Labs/Lab 1 - Lucene/lucene-demo/lib/lucene-analyzers-common-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/IT4BI Courses - Semester 2/Information Retrieval/3. Labs/Lab 1 - Lucene/lucene-demo/lib/lucene-core-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/IT4BI Courses - Semester 2/Information Retrieval/3. Labs/Lab 1 - Lucene/lucene-demo/lib/lucene-queryparser-4.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/IT4BI Courses - Semester 2/Information Retrieval/_projects/Code/lib/poi-3.8-beta3-20110606.jar"/>
+	<classpathentry kind="lib" path="D:/IT4BI Courses - Semester 2/Information Retrieval/_projects/Code/lib/poi-scratchpad-3.8-beta3-20110606.jar"/>
+	<classpathentry kind="lib" path="D:/IT4BI Courses - Semester 2/Information Retrieval/_projects/Code/lib/pdfbox-app-1.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

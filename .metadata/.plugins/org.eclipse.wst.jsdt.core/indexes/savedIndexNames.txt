@@ -1,8 +1,0 @@
-INDEX VERSION 1.3+/Users/vamhan/Downloads/apache-tomcat-7.0.52/webapps/ROOT/irProject/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-1681647950.index
-971039654.index
-32409902.index
-3192783550.index
-3566151756.index
-2845308187.index
-1832990120.index

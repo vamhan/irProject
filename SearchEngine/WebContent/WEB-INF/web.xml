@@ -25,5 +25,14 @@
         <servlet-name>Register</servlet-name>
         <url-pattern>/Register</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>Autocomplete</servlet-name>
+      <servlet-class>controller.Autocomplete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Autocomplete</servlet-name>
+        <url-pattern>/Autocomplete</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -3,7 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="jquery/css/ui-lightness/jquery-ui-1.8.23.custom.css" />
 <script type="text/javascript" src="jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-1.8.20.custom.min.js"></script>
 <title>Interface</title>
 <style type="text/css">
 body {
@@ -37,7 +39,26 @@ body {
 	</div>
 
 	<script type="text/javascript">
-	
+		$(function() {
+			var availableTags = [];
+
+			$("#text_submit").autocomplete({
+				source : function(request, response) {
+					$.get("/SearchEngine/Autocomplete", {
+						keyword : $("#text_submit").val()
+					}).done(function(responseJson) {
+						if (responseJson) {
+							response($.map(responseJson.results, function(item) {
+								return {
+									value : item.label
+								}
+							}));
+						}
+					});
+				},
+				minLength : 0
+			});
+		});
 	</script>
 </body>
 </html>
